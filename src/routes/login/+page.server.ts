@@ -68,7 +68,7 @@ export const actions = {
       const { data, error } = await supabase.auth.signInWithOAuth({ 
         provider,
         options: {
-          redirectTo: 'http://localhost:5173/supakit/callback?next=/app'
+          redirectTo: 'http://localhost:5173/auth/callback?next=/app'
         }
       })
 
